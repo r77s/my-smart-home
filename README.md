@@ -36,7 +36,8 @@ The basic system consists of:
 
 - Raspberry Pi 4 with 4GB Ram
 - Zigbee CC2531 with antenna and housing
-![CC2531](https://github.com/r77s/My-Smart-Home/blob/master/images/cc2531.jpg)
+  
+![CC2531](https://github.com/r77s/My-Smart-Home/blob/master/images/cc2531.jpg =150x)
 
 Smarthome components:
 
