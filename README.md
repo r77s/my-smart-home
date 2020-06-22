@@ -217,9 +217,11 @@ mkdir ~/docker/volumes/node_red
 ```
 Then start the container
 ```
-docker run -d \
+  docker run -d \
   --name node-red \
   -p 1880:1880 \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v /etc/timezone:/etc/timezone:ro \
   -v /home/pi/docker/volumes/node_red:/data \
   --restart=always nodered/node-red
 ```
