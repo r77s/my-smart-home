@@ -170,8 +170,8 @@ Very good and easy monitoring tool.
 ```
 docker run -d --name=netdata \
   -p 19999:19999 \
-  -v /home/pi/docker/volumes/netdatalib:/var/lib/netdata \
-  -v /home/pi/docker/volumes/netdatacache:/var/cache/netdata \
+  -v netdatalib:/var/lib/netdata \
+  -v netdatacache:/var/cache/netdata \
   -v /etc/passwd:/host/etc/passwd:ro \
   -v /etc/group:/host/etc/group:ro \
   -v /proc:/host/proc:ro \
@@ -180,7 +180,7 @@ docker run -d --name=netdata \
   --restart unless-stopped \
   --cap-add SYS_PTRACE \
   --security-opt apparmor=unconfined \
-  netdata/netdata:latest
+  netdata/netdata
 ```
 ## Smarthome containers that I use
 ### openHAB
