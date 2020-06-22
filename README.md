@@ -17,6 +17,7 @@ My Smarthome is documented in this repository. The base is a Raspberry Pi with c
   - [RPI dockerui](#rpi-dockerui)
   - [NTOP](#ntop)
   - [cAdvisor](#cadvisor)
+  - [NetData](#netdata)
 - [Smarthome containers that I use](#smarthome-containers-that-i-use)
   - [openHAB](#openhab)
   - [Logviwer for openHAB](#logviwer-for-openhab)
@@ -162,6 +163,24 @@ docker run -d \
   --publish=7000:8080 \
   --detach=true \
   --name=cadvisor budry/cadvisor-arm:latest
+```
+
+### NetData
+Very good and easy monitoring tool.
+```
+docker run -d --name=netdata \
+  -p 19999:19999 \
+  -v /home/pi/docker/volumes/netdatalib:/var/lib/netdata \
+  -v /home/pi/docker/volumes/netdatacache:/var/cache/netdata \
+  -v /etc/passwd:/host/etc/passwd:ro \
+  -v /etc/group:/host/etc/group:ro \
+  -v /proc:/host/proc:ro \
+  -v /sys:/host/sys:ro \
+  -v /etc/os-release:/host/etc/os-release:ro \
+  --restart unless-stopped \
+  --cap-add SYS_PTRACE \
+  --security-opt apparmor=unconfined \
+  netdata/netdata:latest
 ```
 ## Smarthome containers that I use
 ### openHAB
