@@ -264,6 +264,7 @@ I use the following binding. The configuration can be taken from the official op
 - FritzboxTR064 Binding fritzboxtr064
 - Homematic Binding homematic
 - NTP Binding ntp
+- Network Binding
 
 I also use the openHAB Cloud Service: https://myopenhab.org/
 
