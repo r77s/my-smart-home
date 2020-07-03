@@ -186,7 +186,7 @@ docker run -d --name=netdata \
 ### openHAB
 The core system I use is openHAB. All other docker containers provide additional functionality.
 
-_I am currently using version 2.5.2, but you can also use the latest one._
+_I am currently using version 2.5.6, but you can also use the latest one._
 ```
 docker run -d \
   --name openhab \
@@ -198,7 +198,7 @@ docker run -d \
   -v /home/pi/docker/volumes/openhab_addons:/openhab/addons \
   -e USER_ID=1000 \
   -e GROUP_ID=1000 \
-  --restart=always openhab/openhab:2.5.5
+  --restart=always openhab/openhab:2.5.6
 ```
 ### Logviwer for openHAB
 To see the log output in openHAB, I use the following container.
