@@ -259,12 +259,15 @@ docker run -d \
 ## openHAB Configuration
 ### Used bindings
 I use the following binding. The configuration can be taken from the official openHAB documentation: [openHAB docs](https://www.openhab.org/docs/)
-- Amazon Echo Steuerung Binding amazonechocontrol
-- Astro Binding astro
-- FritzboxTR064 Binding fritzboxtr064
-- Homematic Binding homematic
-- NTP Binding ntp
-- Network Binding
+- Amazon Echo Steuerung Binding 
+- Astro Binding 
+- FritzboxTR064 Binding 
+- Homematic Binding 
+- Network Binding 
+- NTP Binding 
+- Systeminfo Binding 
+- Telegram Binding 
+- Xiaomi Mi IO Binding 
 
 I also use the openHAB Cloud Service: https://myopenhab.org/
 
