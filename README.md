@@ -24,6 +24,7 @@ My Smarthome is documented in this repository. The base is a Raspberry Pi with c
   - [Node-RED](#node-red)
   - [Mosquitto](#mosquitto)
   - [Zigbee2Mqtt](#zigbee2mqtt)
+  - [Home-Assistent](#home-assistent)
 - [openHAB Configuration](#openhab-configuration)
   - [Used bindings](#used-bindings)
 - [MQTT](#mqtt)
@@ -257,7 +258,7 @@ docker run -d \
   --privileged=true koenkk/zigbee2mqtt
 ```
 
-### Home Assistent
+### Home-Assistent
 For geofencing function I use this container to push the state to MQTT.
 ```
 docker run -d  \ 
