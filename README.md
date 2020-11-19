@@ -261,13 +261,9 @@ docker run -d \
 ### Home-Assistent
 For geofencing function I use this container to push the state to MQTT.
 ```
-docker run -d  \ 
-  --name="home-assistant" \ 
-  -v docker run -d --name="home-assistant" \
+docker run -d --name="home-assistant" \
   -v /home/pi/docker/volumes/home_assistant_config:/config \
-  -v /etc/localtime:/etc/localtime:ro \ 
-  --net=host homeassistant/home-assistant:stable:/config \ 
-  -v /etc/localtime:/etc/localtime:ro \ 
+  -v /etc/localtime:/etc/localtime:ro \
   --restart=always \
   --net=host homeassistant/home-assistant:stable
 ```
