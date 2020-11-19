@@ -268,6 +268,7 @@ docker run -d  \
   -v /etc/localtime:/etc/localtime:ro \ 
   --net=host homeassistant/home-assistant:stable:/config \ 
   -v /etc/localtime:/etc/localtime:ro \ 
+  --restart=always \
   --net=host homeassistant/home-assistant:stable
 ```
 
