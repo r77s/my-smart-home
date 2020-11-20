@@ -264,6 +264,7 @@ For geofencing function I use this container to push the state to MQTT.
 docker run -d --name="home-assistant" \
   -v /home/pi/docker/volumes/home_assistant_config:/config \
   -v /etc/localtime:/etc/localtime:ro \
+  -v /etc/timezone:/etc/timezone:ro \
   --restart=always \
   --net=host homeassistant/home-assistant:stable
 ```
