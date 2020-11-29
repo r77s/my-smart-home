@@ -199,7 +199,7 @@ docker run -d \
   -v /home/pi/docker/volumes/openhab_addons:/openhab/addons \
   -e USER_ID=1000 \
   -e GROUP_ID=1000 \
-  --restart=always openhab/openhab:2.5.6
+  --restart=always openhab/openhab:latest
 ```
 ### Logviwer for openHAB
 To see the log output in openHAB, I use the following container.
