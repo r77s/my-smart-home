@@ -1,7 +1,8 @@
 My Smarthome is documented in this repository. The base is a Raspberry Pi with containers.
 
-![version](https://img.shields.io/badge/version-0.6.0-blue) ![deprecated](http://badges.github.io/badges/dist/deprecated.svg)
-moved from openHab to home-assistant
+![version](https://img.shields.io/badge/version-0.6.0-blue) 
+
+deprecated -> moved from openHab to home-assistant
 
 ## Table of Contents
 
